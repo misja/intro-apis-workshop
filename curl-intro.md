@@ -1,6 +1,6 @@
 # Start using cURL in the command line
 
-In the [previous section](https://github.com/LearningNerd/intro-apis-workshop/blob/master/network-tab.md), we learned how to use the Network panel in Chrome's built in developer tools to see *all* of the request and response data being sent and received every time you access a web page. Next, let's use an even *more powerful* tool for making HTTP requests: [**cURL**](https://en.wikipedia.org/wiki/CURL)!
+In the [previous section](https://github.com/misja/intro-apis-workshop/blob/main/network-tab.md), we learned how to use the Network panel in Chrome's built in developer tools to see *all* of the request and response data being sent and received every time you access a web page. Next, let's use an even *more powerful* tool for making HTTP requests: [**cURL**](https://en.wikipedia.org/wiki/CURL)!
 
 **cURL** is a command line tool for accessing and transferring data over the internet. It basically does what your web browser does, but without the graphical user interface, and with a LOT more control over how you send your requests!
 
@@ -45,4 +45,4 @@ Compare the response body to the response you saw in the Network tab. ***Are the
 
 <hr/>
 
-:point_right: **Next up:** [**let's tackle a fun series of practice challenges using cURL to access some fun APIs!**](https://github.com/LearningNerd/intro-apis-workshop/blob/master/api-challenges-1.md)
+:point_right: **Next up:** [**let's tackle a fun series of practice challenges using cURL to access some fun APIs!**](https://github.com/misja/intro-apis-workshop/blob/main/api-challenges-1.md)

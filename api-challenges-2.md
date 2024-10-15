@@ -1,6 +1,6 @@
 # API practice challenges part 2
 
-In the [previous section](https://github.com/LearningNerd/intro-apis-workshop/blob/master/api-challenges-1.md), we tested out a couple of silly APIs to learn about reading API documentation, viewing headers and sending our own, requesting different data formats, and supplying our own query parameters.
+In the [previous section](https://github.com/misja/intro-apis-workshop/blob/main/api-challenges-1.md), we tested out a couple of silly APIs to learn about reading API documentation, viewing headers and sending our own, requesting different data formats, and supplying our own query parameters.
 
 So far, we've only tried out ***public APIs*** that don't require you to set anything up to identify *who you are*. But many APIs, if not *most* of them, do require you to identify yourself using an **API key** or a **personal access token**, which is basically a very long password that *only you* have access to.
 

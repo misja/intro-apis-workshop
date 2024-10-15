@@ -33,11 +33,11 @@ Application Programming Interfaces (APIs) are a pretty broad category of things 
 
   - [**Application binary interfaces**](https://en.wikipedia.org/wiki/Application_binary_interface) allow code for computer applications to communicate with the operating system and the 1s and 0s, the machine code that the computer understands!
 
-  - And finally, an [**application programming interface**](https://en.wikipedia.org/wiki/Application_programming_interface) or **API** is a higher-level software interface that allows different pieces of software to communicate or interact with each other. APIs can take many forms -- there are APIs for everything from web apps and web browsers to operating systems and everything in between! 
+  - And finally, an [**application programming interface**](https://en.wikipedia.org/wiki/Application_programming_interface) or **API** is a higher-level software interface that allows different pieces of software to communicate or interact with each other. APIs can take many forms -- there are APIs for everything from web apps and web browsers to operating systems and everything in between!
 
- > Curious about interfaces in general? I borrowed most of the above info directly from Wikipedia's page on interfaces, which is a really interesting read: https://en.wikipedia.org/wiki/Interface_(computing) 
- 
- 
+ > Curious about interfaces in general? I borrowed most of the above info directly from Wikipedia's page on interfaces, which is a really interesting read: https://en.wikipedia.org/wiki/Interface_(computing)
+
+
 ## What is an Application Programming Interface (API)?
 
 Just as a graphical user interface (GUI) allows users to interact with software programs, ***an API allows one software program to interact with another.***
@@ -49,15 +49,15 @@ Just as a graphical user interface (GUI) allows users to interact with software 
   - [**Web browser APIs**](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) are what allow us to use the JavaScript language to interact with a web browser! We've already been using the [**Document Object Model API**](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) to let our JavaScript interact with a web page's HTML or CSS, using built-in API functions like `document.getElementById()`.
 
   - The [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console) is another built-in web browser API, which lets us interact with the web browser's console -- like our favorite `console.log()` function!
-  
+
   - The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API) lets us use JavaScript to create and play sounds (or music) right within the web browser.
-  
+
   > And there are *many* other built-in web browser APIs! Take a look through this list from MDN: https://developer.mozilla.org/en-US/docs/WebAPI
 
   - **Third party web APIs** are probably the type of API that you'll hear about the most. These are APIs created by *other companies* that allow your program to communicate with their program *over the internet*. You may have heard of Twitter's API, YouTube's API and plenty of others!
-  
+
   > **Note:** The term ***["third party"](https://en.wikipedia.org/wiki/Third-party_source)*** means that it was created by some other company or organization. If you created *your own* API that lets your own programs talk to each other over the internet, we would still call that a web API, just not a *third party* API. (And it is common for companies to build APIs for themselves!)
-  
+
 We'll explore some more examples of third party web APIs further below. But first, a quick vocabulary note:
 
 
@@ -65,8 +65,8 @@ We'll explore some more examples of third party web APIs further below. But firs
 
 The way these words are commonly used, software libraries and APIs are closely connected:
 
-  - The **library** is ***all the code*** written by someone else to be shared and reused by other programmers. 
-  
+  - The **library** is ***all the code*** written by someone else to be shared and reused by other programmers.
+
   - The ***library's API*** (or "the API for this library") is the **interface** that lets programmers ***use*** the library -- the functions/objects/etc that allow us to use the library's features in our own program.
 
 :star: ***If the library is a microwave, then the API is the collection of buttons that allow you to cook your food!***
@@ -81,7 +81,7 @@ And yes, software developers do create libraries and APIs for themselves! It hel
 :star: ***Accessing an API over the internet is essentially the same thing as going to a website.*** There are only a couple differences:
 
   - Instead of typing a URL into your web browser to access a website, you'd access an API from *within your code* (like inside your JavaScript file) or via the *command line* directly.
-  
+
   - Compared to visiting a website as a *user*, accessing an API as a *developer* does require you to read some documentation beforehand to learn each API's unique rules and conventions. (So it's not quite as easy as just typing in a URL.)
 
 Aside from learning the rules for each specific API you're working with, you'll also need a bit of background knowledge about how information is sent over the internet:
@@ -108,7 +108,7 @@ Very simple, isn't it? It's an old-fashioned idea, but it works because our comp
 
 The following four things are sent by the client (your computer) every time you visit a web page (in other words, every time you make an HTTP request to some server on the internet):
 
-  1. The **URL** (**U**niform **R**esource **L**ocator), like https://example.com -- this is the unique address for the data or web service you're interacting with.  
+  1. The **URL** (**U**niform **R**esource **L**ocator), like https://example.com -- this is the unique address for the data or web service you're interacting with.
 
   2. The **HTTP request method** (also called the *HTTP verb*), which specifies what type of action is being requested for the server to perform. (See examples in the table below.)
 
@@ -129,8 +129,8 @@ The following four things are sent by the client (your computer) every time you 
 The **GET** and **POST** request methods are the most common by far. Most of the time when you're browsing the web, your web browser is just sending a bunch of GET requests. When you submit a form (especially with any private information like a password, bank account info, etc), that's usually sent as a POST request.
 
 :books: **Extra resources:**
-  - See GitHub's API documentation on how they use the HTTP verbs (they use some special ones in addition to the main four): https://developer.github.com/v3/#http-verbs 
-  
+  - See GitHub's API documentation on how they use the HTTP verbs (they use some special ones in addition to the main four): https://developer.github.com/v3/#http-verbs
+
   - You can also explore the HTTP verbs in more depth here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
 ### The three parts of an HTTP response
@@ -138,7 +138,7 @@ The **GET** and **POST** request methods are the most common by far. Most of the
 As we saw above, any time you visit a website or make an API call, you're sending a request to the web server. Then each time the web server receives a request, it sends a ***response*** to the client. The response contains three pieces of information:
 
   1. A **status code** (like 200 or 404), which indicates whether the HTTP request has been successfully completed -- or if not, what type of error occurred. ([Wikipedia has a great list of all the common HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).)
-  
+
   2. The **headers**, which contain important *meta-information* about the response -- just like headers in the request, except with different meta-information like what data format the server used to package the information sent in the response.
 
   3. The **body of the response**, which contains any *actual data* sent from the server back to the client. For example, if you send a request to Google with a search term, Google's servers will send a list of search results included in the *body* of the response.
@@ -148,7 +148,7 @@ As we saw above, any time you visit a website or make an API call, you're sendin
 **Example 1:** You go to https://example.com by typing that URL into your web browser.
 
 **The request contains:**
-  1. The URL: https://example.com 
+  1. The URL: https://example.com
   2. The HTTP request method: GET
   3. The headers probably include things similar to: "Accept: text/html" and "Accept-Language: en-us" and "User-Agent: Mozilla/5.0", etc
   4. The body of a GET request is usually empty
@@ -195,14 +195,14 @@ There's a *lot* more to learn about authentication; see the [extra resources at 
 Many API providers will *limit* how often you can use their API. Why? Here are two main reasons:
 
   - Remember, sending things over the web uses up bandwidth, which costs money! API providers will create rate limits to help keep their expenses under control.
-  
+
   - Even more importantly, rate limits also help to prevent abuse of the API -- for example, by overloading the API provider's servers with what's called a [denial-of-service (DoS) attack](https://en.wikipedia.org/wiki/Denial-of-service_attack).
 
 For example, GitHub's API limits you to *60 requests per hour* if your requests are made anonymously. (If you associate your requests with a GitHub account, then you get 5000 requests per hour!)
 
-  > See GitHub's API documentation for more on their rate limiting rules: https://developer.github.com/v3/#rate-limiting 
+  > See GitHub's API documentation for more on their rate limiting rules: https://developer.github.com/v3/#rate-limiting
 
-Another example: Google Maps provides an API for calculating the distance between two places, which is free up to a point, and then they start charging you money after that. You can see all the details here: https://developers.google.com/maps/documentation/distance-matrix/usage-limits 
+Another example: Google Maps provides an API for calculating the distance between two places, which is free up to a point, and then they start charging you money after that. You can see all the details here: https://developers.google.com/maps/documentation/distance-matrix/usage-limits
 
 ### API keys
 
@@ -214,4 +214,4 @@ To use the API for Twitter, Facebook, and many other web services, you to first 
 
 <hr/>
 
-:point_right: **Next up: [**onto our practice challenges to learn how to work with APIs!**](https://github.com/LearningNerd/intro-apis-workshop/blob/master/network-tab.md)
+:point_right: **Next up: [**onto our practice challenges to learn how to work with APIs!**](https://github.com/misja/intro-apis-workshop/blob/main/network-tab.md)

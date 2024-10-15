@@ -1,6 +1,6 @@
 # API practice challenges part 1
 
-In the [previous section](https://github.com/LearningNerd/intro-apis-workshop/blob/master/curl-intro.md), we used **cURL** to request a website straight from the command line, and saw that it does basically the same thing as going to a website in our web browser -- except it shows the response body as ***code***, rather than rendering it visually the way we're used to looking at websites.
+In the [previous section](https://github.com/misja/intro-apis-workshop/blob/main/curl-intro.md), we used **cURL** to request a website straight from the command line, and saw that it does basically the same thing as going to a website in our web browser -- except it shows the response body as ***code***, rather than rendering it visually the way we're used to looking at websites.
 
 Next, let's practice making requests to some fun APIs to see how the process works!
 
@@ -134,4 +134,4 @@ If you like, try requesting **XML format** as well to see how different it looks
 
 <hr/>
 
-:point_right: **Next up:** [**let's try some APIs that require an API or a personal access token in order to use them.**](https://github.com/LearningNerd/intro-apis-workshop/blob/master/api-challenges-2.md)
+:point_right: **Next up:** [**let's try some APIs that require an API or a personal access token in order to use them.**](https://github.com/misja/intro-apis-workshop/blob/main/api-challenges-2.md)
