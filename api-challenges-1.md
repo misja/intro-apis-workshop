@@ -30,8 +30,8 @@ curl http://example.com/ -i
 
 **Your challenge:** Request another random dad joke, but this time use the `-i` flag!
 
-  - Take a look at the response headers that they sent us. What's the **content type**? 
-  
+  - Take a look at the response headers that they sent us. What's the **content type**?
+
   - Can you spot the **status code** at the very top of their headers? What is it?
 
 <br/>
@@ -45,7 +45,7 @@ curl http://example.com/ -i
 **Find out and discuss:**
 
   - Comparing the response info shown in the web browser to the info shown in cURL for the same URL, ***what's different*** in the response headers and the response body?
-  
+
   - Why is it that the web browser sends you HTML, but if you do the same request via command line, their server just sends you a small bit of plain text? How do they know whether you're using a web browser or not?
 
 <br/>
@@ -59,9 +59,9 @@ When you see the data in your command line, the request headers are prefaced wit
 **Your challenge:** Use cURL to get another random joke, but this time use the `-v` flag to see both the request and the response headers.
 
   - In the request headers, what's your **user agent** identified as?
-  
+
   > **Hint:** Look at the request headers, which appear *above* the response headers and have the `>` symbol at the beginning of each line. Thie will appearbut *below* the "TLS handshake" stuff (which handles establishing a secure connection because we're using HTTP**S** and not HTTP, where the S stands for a Secure connection).
- 
+
   - Look at the Network tab in your web browser again now, for the same URL you had requested vai cURL. What is your *web browser* sending to their server as the **user agent** header?
 
 
@@ -92,17 +92,17 @@ There are several different standard **data formats** used in the software world
 ## Challenge 7: Use query parameters in your API request
 
 **Your challenge:** Find a knock-knock joke from the Dad Jokes API, get the ID of the joke, and then get that joke as an image file. *Use their documentation to figure out these next steps!*
-  
-  1. First, search the Dad Jokes API for jokes containing the word "knock-knock". 
-  
+
+  1. First, search the Dad Jokes API for jokes containing the word "knock-knock".
+
   2. Then copy or write down the ID of the joke that was sent in the body of the response, because you'll be using it in the next step!
-  
+
   3. Use cURL again to request that particular joke as an image file, using its case-sensitive ID.
-  
+
   4. Discuss: What just happened? Why do you think the response body looks like this inside the command line?
 
   5. Next, use your *web browser* to access that same URL (the URL that you requested to get the image file).
-  
+
   6. Discuss: Now what happened? Why does it work differently?
 
   7. Last but not least, use the Network panel in your browser to take a look at the response headers for that web page containing the image. What's the **content type** of this response?
@@ -113,11 +113,11 @@ There are several different standard **data formats** used in the software world
 
 :warning: Before looking at the website below, please note that it contains ***adult language*** that is quite inappropriate and possibly offensive. (Only proceed if that fits your sense of humor!)
 
-OK, here we go! [**FOaaS** (F%$# Off as a Service)](http://www.foaas.com/) is another ridiculous API that somebody made as a joke. It just generates insults for you, based on your own custom parameters.
+OK, here we go! [**FOaaS** (F%$# Off as a Service)](https://foaas.dev/) is another ridiculous API that somebody made as a joke. It just generates insults for you, based on your own custom parameters.
 
 ### Bonus challenge 1:
 
-**Your challenge:** Read over the [FOaaS API documentation](http://www.foaas.com/) and try out a couple of their API's endpoints!
+**Your challenge:** Read over the [FOaaS API documentation](https://foaas.dev/) and try out a couple of their API's endpoints!
 
 Notice that instead of using query parameters in the `?parameter=value` format, they identify parameters in their URLs (also called endpoints) with a different format in their documentation, where each parameter is preceded by a ***colon***.
 

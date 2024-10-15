@@ -20,51 +20,20 @@ It should only take a couple minutes to get things set up. :) Follow the instruc
 
 If you're on a **Mac**: open the **Terminal** app to access your computer's command line. Easy!
 
-  - You can search for "Terminal" in Finder or in Spotlight, wherever your normally search for things on your computer.
+  - You can search for "Terminal" in Finder or in Spotlight, wherever you normally search for things on your computer.
 
 <br/>
 
 ### Windows users:
 
-To make this as easy as possible, for now we'll use the command line built into [Glitch](https://glitch.com) (which is a free online tool for writing and sharing code):
+Windows also has a **Terminal** app, although it's installed by default only since Windows 11 (specifically since Windows 11 Release 22H2 ...).
 
-<br/>
-
-**1. [Click this link to **create a new project on Glitch**](https://glitch.com/edit/#!/remix/hello-website).**
-
-  > **Note:** You don't need to make an account.
-
-<br/>
-
-**2. Click on the project name in the top left corner.**
-
-The name of your project will be a randomly-generated a pair of words, like "plastic-sardine", "shrouded-oxygen", or something equally silly:
-
-![Glitch project link](https://github.com/LearningNerd/intro-apis-workshop/blob/master/images/glitch-1.png)
-
-<br/>
-
-**3. In the drop-down menu, click "Advanced Options" at the very bottom:**
-
-![Glitch advanced options menu](https://github.com/LearningNerd/intro-apis-workshop/blob/master/images/glitch-2.png)
-
-<br/>
-
-**4. Then click "Open Console":**
-  
-![Glitch open console](https://github.com/LearningNerd/intro-apis-workshop/blob/master/images/glitch-3.png)
-
-<br/>
-
-**5. A new tab will open with your browser!**
-
-It'll have a black background and some white or green text. You can type in here -- this is your command line for today!
-
-![Using the console in Glitch](https://github.com/LearningNerd/intro-apis-workshop/blob/master/images/glitch-4.png)
-
-<br/>
+  - Search for "Terminal" in your installed Apps, or wherever you normally search for things on your computer.
+  - If you can't find the Terminal app, open Microsoft Store, search for Terminal and install it.
 
 ## Make your first cURL request
+
+**Important** When using Windows you'll always need to type `curl.exe` instead of just `curl`. Microsoft is aware of this issue but they haven't created a solution for this yet ...
 
 Copy-paste the code below into your command line, and then press Enter to request `example.com` using cURL:
 
