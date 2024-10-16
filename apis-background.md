@@ -6,7 +6,6 @@ You've certainly heard the term ***API*** thrown around a lot -- not just among 
 
   - [Zapier's Intro to APIs article series](https://zapier.com/learn/apis/) is very well-written and worth reading!
   - [MDN's Intro to web APIs article](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) is also a great read, with many examples of both built-in web browser APIs and third-party web APIs.
-  - ["An Introduction to APIs" by Gonzalo Vázquez](https://restful.io/an-introduction-to-api-s-cee90581ca1b) is also a great overview of the concepts covered below, with more details.
 
 **Table of Contents:**
 
